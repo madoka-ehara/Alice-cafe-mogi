@@ -1,0 +1,1670 @@
+/* 
+Theme Name: Alice
+Description: Alice Webサイト
+Author: 江原園
+Version: 1.0.0
+*/
+
+/* フォントの設定 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+html, body {
+    font-size: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 1.6;
+    letter-spacing: 0.05em;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* PC版 */
+/* header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 89px;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 5px 3px 5px 3px #B0A293;
+    z-index: 3000;
+}
+.logo img {
+    width: 170px;
+    height: 100px;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+.menu-pc {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.menu-pc li {margin-right: 20px;}
+.menu-pc a {
+    font-weight: bold;
+    transition: .5s cubic-bezier(0.43,0.05,0.17,1 ),
+        background-color .5s cubic-bezier(0.43,0.05,0.17,1 );
+}
+.menu-pc a:hover {
+    color: #fff;
+    background-color: #F27895;
+    border-color: #fff;
+}
+
+/* ハンバーガーボタン */
+.hamburger__btn {
+    display: none;
+    position: relative;
+    z-index: 9999;
+}
+.hamburger__line {
+    width: 30px;
+    height: 3px;
+    background-color: #6d3602;
+    opacity: 1;
+    border-radius: 10%;
+    transition: opacity 0.5s cubic-bezier(0.43, 0.05, 0.17, 1), transform 0.5s cubic-bezier(0.43, 0.05, 0.17, 1);
+}
+
+/* ハンバーガーメニュー */
+.hamburger-menu-sp {
+    display: none;
+}
+
+/* fv */
+.front-fv img {
+    width: 100%;
+    height: 900px;
+    object-fit: cover;
+}
+.front-common__title {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin: 80px 0 50px;
+}
+.front-common__btn {
+    display: inline-block;
+    width: 100%;
+    margin: 50px auto;
+    transition: 0.5s cubic-bezier(0.43,0.05,0.17,1 ),
+        background-color .5s cubic-bezier(0.43,0.05,0.17,1 );
+}
+.front-common__btn a:hover {
+    color: #fff;
+    background-color: #F27895;
+    border: solid 0.5px #fff;
+}
+.front-common__btn a {
+    display: block;
+    text-align: center;
+    margin: 50px auto;
+    padding: 15px;
+    border: solid 0.5px #000;
+    border-radius: 50px;
+    color: #fff;
+    background-color: #6d3602;
+    box-shadow: 2px 1px 3px 1px #281e1e;
+    width: 300px;
+    font-size: 20px;
+}
+
+/* swiper */
+.swiper {
+    width: 100%;
+    height: 900px;
+    object-fit: cover;
+}
+.swiper-store {
+    width: 70%;
+    height: 350px;
+    object-fit: cover;
+    margin: 80px auto;
+}
+
+/* お知らせ */
+.front-news {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 0 30px;
+}
+.front-news__wrap a {
+    display: flex;
+    align-items: center;
+    padding: 5px ;
+    border-bottom: solid 1px #B0A293;
+}
+.front-news__wrap a time {
+    margin: 0 100px;
+}
+.front-news__wrap h3 {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* メニュー */
+.front-menu__inner {
+    background-color: #6d3602;
+    padding: 30px 0;
+}
+.front-common__title__white {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 100px 0;
+    text-align: center;
+    color: #fff;
+}
+.front-menu__wrapper {
+    max-width: 900px;
+    margin: 50px auto;
+}
+.front-menu__list {
+    margin: 50px auto;
+    list-style: none;
+}
+.front-menu__list__item {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 30px 0;
+    background-color: #fff;
+}
+.front-menu__list__item img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+.front-menu__list__text {
+    padding: 30px;
+}
+.front-menu__list__text h3 {
+    font-size: 25px;
+}
+.front-menu__list__text p {
+    padding-right: 20px;
+    font-size: 18px;
+    letter-spacing: 0.08em;
+}
+.front-common__btn__right {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 50px;
+    transition: 0.5s cubic-bezier(0.43,0.05,0.17,1 ),
+        background-color .5s cubic-bezier(0.43,0.05,0.17,1 );
+}
+.front-common__btn__right a {
+    display: block;
+    text-align: center;
+    margin: 50px auto;
+    padding: 15px;
+    border: solid 0.5px #000;
+    border-radius: 50px;
+    background-color: #A09689;
+    box-shadow: 2px 1px 3px 1px #281e1e;
+    width: 300px;
+    font-size: 20px;
+}
+.front-common__btn__right a:hover {
+    color: #fff;
+    background-color: #F27895;
+    border-color: #fff;
+}
+
+/* Aliceについて about */
+.front-about__img {
+    background-image: url("img/costume.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-color:rgba(255,255,255,0.8);
+    background-blend-mode:lighten;
+    margin-top: 60px;
+    padding: 40px 0 70px;
+}
+.front-about__img img {
+    width: 100%;
+}
+.front-about__text__wrapper {
+    margin-left: 20%;
+    padding: 30px;
+}
+.front-about__img p {
+    font-size: 24px;
+}
+.front-about__list {
+    display: flex;
+    max-width: 1100px;
+    margin: 80px auto;
+    gap: 30px;
+    list-style: none;
+    padding: 0 20px;
+}
+.front-about__list__item {
+    width: 33.3333%;
+    margin: 50px 0;
+}
+.front-about__list__item h3 {
+    font-size: 26px;
+}
+.front-about__list__item p {
+    font-size: 18px;
+    letter-spacing: 0.08em;
+}
+.front-about__list__item img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+/* 店舗情報 */
+.store-info__inner {
+    background-color: #6d3602;
+    padding: 5px 0 100px 0;
+}
+.store-img {
+    max-width: 900px;
+    margin: 50px auto;
+}
+.store-img img {
+    width: 100%;
+    border: 5px solid #fff;
+    box-sizing: border-box;
+}
+.store-info__desc {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 80px auto;
+}
+.front_store-list {
+    color: #fff;
+}
+.front_store-list td {
+    font-size: 24px;
+    padding-right: 20px;
+}
+.front-store__img__list {
+    display: flex;
+    max-width: 1100px;
+    margin: 50px auto;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+}
+.front-store__img__list__item {
+    width: 33.3333%;
+    border: 10px solid #fff;
+}
+.front-store__img__list__item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.swiper-button-prev {
+    color: #fff;
+}
+.swiper-button-next {
+    color: #fff;
+}
+.swiper-pagination-bullet-active {
+    background-color: #fff;
+}
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* calender */
+.front-calender__wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 100px auto;
+    gap: 80px;
+}
+.store-mng__info {
+    text-align: center;
+}
+.store-mng__info img {
+    width: 50%;
+    border-radius: 50%;
+}
+.store-mng__info img img {
+    width: 100%;
+}
+.store-mng__name {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+/* footer */
+.footer-bg {
+    background-image: url("img/cafe3.png");
+    background-color:rgba(255,255,255,0.8);
+    background-blend-mode:lighten;
+    background-position: center;
+}
+.footer-inner {
+    padding: 50px 20px;
+}
+.footer_store-list {
+    list-style: none;
+}
+.footer_store-list td {
+    padding: 0 20px 0 0;
+}
+.footer_store-list span {
+    font-size: 20px;
+}
+.footer_menu-pc {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 0;
+}
+.footer_menu-pc li {
+    margin: 0 10px;
+    font-size: 14px;
+}
+.footer_menu-pc li:hover {
+    text-decoration: underline;
+}
+.footer_menu-pc a {
+    font-weight: bold;
+}
+.icon-wrapper {
+    text-align: center;
+}
+.icon-wrapper p {
+    font-size: 20px;
+    font-weight: bold;
+}
+.icon_img img {
+    width: 60px;
+    padding: 0 5px;
+    transition: transform 0.5s ease;
+}
+.icon_img img:hover {
+    transform: scale(1.1);
+}
+.footer-text {
+    text-align: center;
+    flex-direction: column;
+}
+.footer-nav_list {
+    display: flex;
+    justify-content: space-around;
+}
+.footer_store-list img {
+    width: 100px;
+    height: 50px;
+    object-fit: cover;
+}
+.caution-text {
+    font-size: 12px;
+    text-align: center;
+}
+
+/* 固定ページ */
+/* お問い合わせ */
+.page-parts__header {
+    height: 350px;
+    position: relative;
+}
+.page-parts__header img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* ContactForm7 */
+.ContactForm7-contact {
+    margin: 0 auto;
+    max-width: 850px;
+}
+.ContactForm7-contact__title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 40px 0;
+}
+.ContactForm7-contact__text {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 18px;
+}
+.ContactForm7-contact__label {
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 25%;
+}
+.ContactForm7-contact__label span {
+    font-weight: bold;
+    color: #fff;
+    background-color: red;
+    padding: 0 10px;
+    margin: 0 15px;
+    font-size: 14px;
+}
+.wpcf7-form-control-wrap {
+    position: relative;
+    left: 25%;
+}
+.ContactForm7-contact input, .ContactForm7-contact textarea {
+    width: 50%;
+    border: none;
+    border: solid 1px #6d3602;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 20px auto;
+}
+.ContactForm7-contact__submit {
+    text-align: center;
+    max-width: 400px;
+    margin-left: 32%;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.5s cubic-bezier(0.43,0.05,0.17,1 ),
+        background-color .5s cubic-bezier(0.43,0.05,0.17,1 );
+}
+.ContactForm7-contact input[type="submit"] {
+    background-color: #B0A293;
+    border-radius: 50px;
+    box-shadow: 2px 1px 3px 1px #281e1e;
+}
+.ContactForm7-contact input[type="submit"]:hover {
+    color: #fff;
+    background-color: #F27895;
+    border-color: #fff;
+}
+
+/* 送信時のメッセージ エラー文 / 送信完了文 */
+.wpcf7-not-valid-tip {
+    display: block;
+    margin-bottom: 20px;
+    color: #f00;
+}
+.wpcf7-response-output {
+    margin: 60px auto;
+    max-width: 800px;
+}
+.screen-reader-response {display: none;}
+
+/* menu-page */
+.page-parts__header__menu-page img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: bottom;
+}
+/* menu-page-fv */
+.menu-page__fv {
+    padding: 30px 0 100px;
+}
+.menu-link__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    max-width: 800px;
+    gap: 60px;
+    margin: 20px auto;
+    transition: 0.5s cubic-bezier(0.43,0.05,0.17,1 ),
+        background-color .5s cubic-bezier(0.43,0.05,0.17,1 );
+}
+.menu-link__btn a {
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 999px;
+    padding: 10px 40px;
+    background-color:#6d3602;
+    box-shadow: 2px 1px 3px 1px #281e1e;
+    color: #fff;
+    font-size: 20px;
+}
+.menu-link__btn a:hover {
+    background-color: #F27895;
+}
+
+/* pancake */
+.common-menu__desc {
+    background-color: #6d3602;
+    padding: 80px 30px 50px;
+}
+.common-menu__desc__inner {
+    max-width: 900px;
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px 0;
+}
+.common-menu-desc__title {
+    font-size: 28px;
+    font-weight: bold;
+    padding: 0 50px;
+}
+.common-menu-desc__title__text {
+    font-size: 21px;
+    padding: 0 50px 30px  50px;
+    letter-spacing: 0.08em;
+}
+.common-menu-desc__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+}
+.common-menu-desc__list {
+    width: 33.3333%;
+}
+.common-menu-desc__img img {
+    width: 70%;
+}
+.common-menu-desc__text {
+    padding: 0 20px;
+}
+.common-menu-name {
+    font-size: 21px;
+    text-align: left;
+    padding-left: 20px;
+}
+.common-menu-price {
+    text-align: right;
+    font-size: 21px;
+    padding-right: 20px;
+}
+
+/* afternoon tea */
+.common-content-text {
+    text-align: left;
+    font-size: 21px;
+    padding: 30px 0 20px 40px;
+}
+.common-content-text p {
+    margin: 5px 0;
+}
+
+/* ぬい撮り */
+.nuidori-content__desc {
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+.nuidori-content__desc__wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    margin: 60px auto;
+}
+.nuidori-content__text {
+    width: 35%;
+}
+.nuidori-content__text__title {
+    font-size: 26px;
+    font-weight: bold;
+}
+.nuidori-content__text p {
+    font-size: 21px;
+    letter-spacing: 0.08em;
+}
+.nuidori-content__img {
+    width: 65%;
+}
+.nuidori-content__img img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.nuidori-content__info__text {
+    text-align: center;
+    font-size: 18px;
+    padding-top: 50px;
+}
+.nuidori-content__attention__wrapper {
+    max-width: 800px;
+    margin: 30px auto;
+}
+.nuidori-content__attention__wrapper h4 {
+    font-size: 26px;
+}
+.nuidori-content__attention__wrapper p {
+    font-size: 21px;
+    text-align: center;
+    margin-top: 30px;
+}
+.nuidori-content__attention__list  {
+    font-size: 21px;
+    margin: 10px 0;
+}
+
+/* single 投稿詳細ページ */
+.single-page-parts__desc {
+    max-width: 900px;
+    margin: 30px auto;
+}
+.single-page-parts__fv img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+.single-page-parts__date {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 24px;
+}
+.single-page-parts__header-title {
+    text-align: center;
+    margin: 10px auto;
+}
+.single-page-parts__header-title h2 {
+    font-size: 36px;
+}
+.single-page-parts__category {
+    display: flex;
+    max-width: 850px;
+    margin: 0;
+    list-style: none;
+    color: #fff;
+    box-sizing: border-box;
+}
+.single-page-parts__category li {
+    font-size: 18px;
+    background-color: #6d3602;
+    box-sizing: border-box;
+    padding: 5px 10px;
+}
+.single-page-parts__category li a {
+    color: #fff;
+}
+.single-page-parts__img {
+    max-width: 850px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.single-page-parts__img img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.single-page-parts__article {
+    max-width: 850px;
+    margin: 0 auto;
+}
+.wp-block-heading {
+    font-size: 28px;
+}
+.single-page-parts__article p {
+    font-size: 21px;
+}
+
+/* お知らせ一覧 archive */
+.post-archive-news {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 0 30px;
+}
+.post-archive-news__wrap a {
+    display: flex;
+    align-items: center;
+    padding: 5px ;
+    border-bottom: solid 1px #B0A293;
+}
+.post-archive-news__wrap a time {
+    font-size: 18px;
+    margin: 0 100px;
+}
+.post-archive-news__wrap h3 {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+/* 404 */
+.er-page-header {
+    max-width: 800px;
+    margin: 100px auto;
+}
+.er-page-header h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+.er-page-text-wrap {
+    margin: 50px auto;
+}
+.er-page-text-wrap p {
+    text-align: center;
+    font-size: 18px;
+}
+
+/* カテゴリ一覧 */
+/* パンくずリスト */
+.breadcrumb-list {
+    display: flex;
+    margin-top: 150px;
+    padding: 0 80px;
+    list-style: none;
+}
+.breadcrumb li {
+    display: inline-block;/*横に並ぶように*/
+    list-style: none;
+    font-weight: bold;
+}
+.breadcrumb li:after {/* >を表示*/
+    content: '>';
+    padding: 0 10px;
+    color: #555;
+}
+.breadcrumb li:last-child:after {
+    content: '';
+}
+.breadcrumb li a {
+    font-size: 18px;
+    font-weight: normal;
+    color: #6d3602;
+    text-decoration: none;
+}
+.breadcrumb li a:hover {
+    text-decoration: underline;
+}
+/* パンくずリスト */
+.category-page-parts__fv {
+    text-align: center;
+    margin-top: 40px;
+}
+.category-page-parts__fv h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+.category-page-parts__fv p {
+    font-size: 25px;
+    padding: 5px 30px;
+    margin: 0 auto;
+}
+.category-page-parts__category {
+    max-width: 900px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    color: #fff;
+    margin: 60px auto;
+    box-sizing: border-box;
+}
+.category-page-parts__category li {
+    font-size: 18px;
+    background-color: #6d3602;
+    box-sizing: border-box;
+    padding: 5px 10px;
+}
+.category-page-parts__category li a {
+    color: #fff;
+}
+.category-page-parts__desc__wrapper {
+    display: flex;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+.category-page-parts__img {
+    width: 50%;
+    box-sizing: border-box;
+}
+.category-page-parts__img img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+.category-page-parts__content-wrapper {
+    width: 50%;
+    box-sizing: border-box;
+}
+.category-page-parts__title {
+    font-weight: bold;
+    padding-left: 50px;
+}
+.category-page-parts__title a {
+    font-size: 28px;
+    letter-spacing: 0.1em;
+    transition: transform 0.6s ease;
+}
+.category-page-parts__title a:hover {
+    text-decoration: underline;
+    background-color: #F27895;
+    color: #fff;
+}
+.post_body {
+    font-size: 18px;
+    padding-left: 50px;
+    letter-spacing: 0.2em;
+}
+
+/* タブレット版 */
+/* 画面サイズが768px以下はここを読み込む */
+@media screen and (max-width:768px) {
+    body {
+        min-width: 100%;
+    }
+
+    /* header */
+    .menu-pc{
+        display: none;
+    }
+    .hamburger__btn {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-right: 20px;
+    }
+    .add-hamburger-menu-sp {
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: block;
+        width: 70%;
+        height: 100vh;
+        padding: 20px 0;
+        z-index: 5;
+        list-style: none;
+        background-color: #fff;
+        transition: transform 0.3s ease;
+        opacity: 1;
+        visibility: visible;
+    }
+    .hamburger-menu-sp__item {
+        max-width: 50%;
+        font-size: 24px;
+        font-weight: bold;
+        margin: 40px auto;
+        text-align: left;
+        padding: 0 30px;
+    }
+    .hamburger__line {
+        width: 30px;
+        height: 3px;
+        background-color: #6d3602;
+        opacity: 1;
+        border-radius: 10%;
+        transition: opacity 0.5s cubic-bezier(0.43, 0.05, 0.17, 1), transform 0.5s 
+    }
+    .hamburger-menu-sp__item:last-child {
+        width: 100%;
+        margin: 50px auto;
+        text-align: center;
+        margin: 50px auto;
+        padding: 15px;
+        border: solid 0.5px #000;
+        border-radius: 50px;
+        color: #fff;
+        background-color: #B0A293;
+        box-shadow: 2px 1px 3px 1px #281e1e;
+        width: 300px;
+        transition: background-color 0.5s ease;
+    }
+    .hamburger-menu-sp__item:last-child:hover {
+        color: #fff;
+        background-color: #F27895;
+        border-color: #fff;
+    }
+    .is-open .hamburger__line:nth-child(1) {
+        transform: translateY(0.5rem) rotate(45deg);
+    }
+    .is-open .hamburger__line:nth-child(2) {
+        opacity: 0;
+    }
+    .is-open .hamburger__line:nth-child(3) {
+        transform: translateY(-0.5rem) rotate(-45deg);
+    }
+    .add-hamburger-menu-sp .sp-link {
+        opacity: 1;
+        transition: .5s cubic-bezier(0.43,0.05,0.17,1 ),
+            background-color .5s cubic-bezier(0.43,0.05,0.17,1 );
+    }
+    .add-hamburger-menu-sp .sp-link:hover {
+        color: #fff;
+        background-color: #F27895;
+    }
+    .add-hamburger-menu-sp .sp-link:last-child:hover {
+        color: #fff;
+        background-color: #F27895;
+    }
+    
+    /* fv */
+    .front-news {
+        padding: 0 40px;
+        margin: 0 auto;
+    }
+    .front-common__title {
+        font-size: 36px;
+    }
+    .front-news__wrap a {
+        text-align: center;
+    }
+    .front-news__wrap a time {
+        margin: 0 20px 0;
+        padding: 0 30px;
+    }
+    .front-common__btn a {
+        font-size: 18px;
+        width: 280px;
+    }
+
+    /* メニュー */
+    .front-menu__list {
+        padding: 30px;
+    }
+    .front-common__title__white {
+        font-size: 36px;
+        margin: 50px 0;          
+    }
+    .front-menu__list__item {
+        flex-direction: column;
+    }
+    .front-menu__list__item img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+    .front-menu__wrapper {
+        width: 100%;
+    }
+    .front-menu__list__text p {
+        margin: 0 auto;
+        padding: 0;
+    }
+    .front-menu__list__text h3 {
+        font-size: 24px;
+    }
+    .front-menu__list__text {
+        padding: 20px 30px 50px 30px;
+    }
+
+    /* Aliceについて */
+    .front-about__list {
+        flex-direction: column;
+        width: 100%;
+        margin: 50px auto;
+        box-sizing: border-box;
+        padding: 0 30px;    
+    }
+    .front-about__img {
+        padding: 10px 0 30px 0;
+    }
+    .front-about__img p {
+        font-size: 21px;
+    }
+    .front-about__list__item {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .front-about__list__item h3 {
+        font-size: 28px;
+        margin: 20px 0;
+    }
+    .front-about__list__item img {
+        box-sizing: border-box;
+        height: 300px;
+        object-fit: cover;
+    }
+    .front-about__list__item p {
+        margin: 30px 20px 30px 0;
+        font-size: 18px;
+    }
+    .front-about__text__wrapper {
+        margin-left: 15%;
+        padding-left: 0;
+    }
+
+    /* 店舗情報 */
+    .store-info__inner {
+        padding: 50px 20px;
+    }
+    .store-info__desc {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 150px;
+        box-sizing: border-box;
+    }
+    .store-img {
+        width: 100%;
+        width: 100%;
+    }
+    .front_store-list {
+        font-size: 22px;
+    }
+    .store-map {
+        margin: 30px auto;
+    }
+
+    /* カレンダー */
+    .front-calender__wrapper {
+        flex-direction: column;
+        margin: 50px auto;
+        gap: 80px;
+        padding: 20px 120px;
+    }
+    .store-mng__name {
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+    .store-mng__info  p {
+        font-size: 18px;
+        margin-top: 30px;
+    }
+
+    /* footer */
+    .footer_menu-pc {
+        flex-direction: column;
+        gap: 15px;
+        align-items: baseline;
+    }
+    .footer-inner {
+        padding: 50px;
+    }
+    .footer-nav_list {
+        justify-content: space-between;
+    }
+    .icon-wrapper {
+        margin-top: 80px;
+    }
+    
+    /* お問い合わせ */
+    /* 固定ページ */
+    .page-parts__header-title {
+        font-size: 21px;
+    }
+    /* ContactForm7  */
+    .ContactForm7-contact {
+        margin: 15px;
+    }
+    .ContactForm7-contact__title {
+        font-size: 31px;
+    }
+    .ContactForm7-contact__label {
+        font-size: 21px;
+    }
+
+    /* menu-page */
+    .menu-link__btn {
+        gap: 50px;
+    }
+    /* pancake */
+    .pancake-menu__desc {
+        padding: 100px 30px;
+    }
+    .common-menu-desc__list {
+        width: 50%;
+    }
+    .common-menu-name {
+        padding-left: 30px;
+    }
+    .common-menu-price {
+        padding-right: 30px;
+    }
+    /* ぬい撮り */
+    .nuidori-content__attention__wrapper {
+        padding: 20px;
+    }
+
+    /* single-page */
+    .single-page-parts__date {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .single-page-parts__header-title {
+        font-size: 28px;
+    }
+    .single-page-parts__category {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    .single-page-parts__article {
+        max-width: 600px;
+        padding: 0 20px;
+    }
+    .single-page-parts__article p {
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    .wp-block-heading {
+        font-size: 21px;
+        font-weight: bold;
+        padding: 20px 20px 0;
+    }
+    .single-page-parts__img {
+        max-width: 600px;
+    }
+    .single-page-parts__img img {
+        height: 450px;
+        width: 100%;
+        object-position: bottom;
+    }
+
+    /* お知らせ一覧 */
+    .post-archive-news__wrap a time {
+        font-size: 16px;
+    }
+    .post-archive-news__wrap h3 {
+        font-size: 21px;
+    }
+
+    /* カテゴリ一覧 */
+    .category-page-parts__fv p {
+        font-size: 20px;
+        padding: 5px 30px;
+        margin: 0 auto;
+    }
+    .category-page-parts__category {
+        max-width: 600px;
+        margin-left: 0;
+    }
+    .category-page-parts__desc__wrapper {
+        width: 100%;
+        padding: 0 30px;
+    }
+    .category-page-parts__img img {
+        height: 280px;    
+    }
+    .category-page-parts__title {
+        padding-left: 30px;
+    }
+    .category-page-parts__title a {
+        font-size: 24px;
+    }
+    .post_body {
+        font-size: 16px;
+        margin-top: 50px;
+        padding-left: 30px;
+        letter-spacing: 0.1em;
+    }
+
+    /* スマホ版 */
+    /* 画面サイズが480px以下はここを読み込む */
+        @media screen and (max-width:480px) {
+        
+        .header {
+            height: 60px;
+            box-sizing: border-box;
+        }
+        .logo img {
+            width: 130px;
+            height: 72px;
+        }
+        .hamburger__btn {
+            margin-right: 10px;
+        }
+        .swiper {
+            height:auto;
+        }
+
+        /* ハンバーガーメニュー */
+        .add-hamburger-menu-sp {
+            width: 80%;
+            margin: 0;
+            padding: 0;
+        }
+        .hamburger-menu-sp__item {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 20px auto;
+            max-width: 70%;
+        }
+        .hamburger-menu-sp__item:last-child {
+            display: block;
+            width: 70%;
+        }
+
+        /* お知らせ */
+        .front-news {
+            padding: 0 20px;
+            margin: 0 auto;
+        }
+        .front-common__title {
+            font-size: 25px;
+            margin: 30px auto;
+        }
+        .front-news__wrap a {
+            flex-direction: column;
+        }
+        .front-news__wrap a time {
+            padding: 10px 0 0 0;
+        }
+        .front-news__wrap h3 {
+            font-size: 18px;
+        }
+        .front-common__btn a {
+            width: fit-content;
+            padding: 15px 20px;
+        }
+
+        /* メニュー */
+        .front-menu__wrapper {
+            margin: 0 auto;
+        }
+        .front-common__title__white {
+            font-size: 25px;
+            margin: 30px auto;
+        }
+        .front-menu__list__item img {
+            height: 200px;
+        }
+        .front-menu__list {
+            padding: 0 20px;
+        }
+        .front-menu__list__text {
+            padding: 0 20px 20px;
+        }
+        .front-menu__list__text h3 {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .front-menu__list__text p {
+            font-size: 16px;
+            padding: 0;
+        }
+        .front-common__btn__right a {
+            margin: 10px auto;
+            font-size: 18px;
+            width: 250px;
+        }
+
+        /* Aliceについて */
+        .front-about__text__wrapper {
+            margin: 0 auto;
+            padding: 20px 30px;
+        }
+        .front-about__img {
+            background-position: center;
+        }
+        .front-about__img p {
+            font-size: 18px;
+        }
+        .front-about__list {
+            gap: 20px;
+            margin: 20px auto 30px;
+        }
+        .front-about__list__item img {
+            height: 250px;
+        }
+        .front-about__list__item h3 {
+            font-size: 21px;
+            margin: 20px 0;
+        }
+        .front-about__list__item p {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        /* 店舗情報 */
+        .store-img {
+            margin: 50px auto 0;
+        }
+        .store-info__desc {
+            margin: auto;
+            padding: 10px 0;
+        }
+        .front_store-list {
+            font-size: 18px;
+        }
+        .front_store-list td {
+            padding-right: 10px;
+            font-size: 15px;
+        }
+        .store-map iframe {
+            width: 100%;
+            height: auto;
+        }
+        .swiper-store {
+            width: 100%;
+            margin: 10px auto;
+            height: 200px;
+        }
+
+        /* カレンダー */
+        .calender {
+            padding-top: 20px;
+        }
+        .front-calender__wrapper {
+            margin: 30px auto 0;
+            padding: 10px;
+            gap: 30px;
+        }
+        .front-calender {
+            max-width: 400px;
+        }
+        .front-calender iframe {
+            width: 100%;
+        }
+
+        /* footer */
+        .footer-inner {
+            padding: 30px 20px;
+        }
+        .footer-nav_list {
+            flex-direction: column;
+        }
+        .footer_store-list img {
+            width: 80px;
+            height: 40px;
+        }
+        .footer_store-list td {
+            padding: 0;
+        }
+        .footer_menu-pc {
+            flex-direction: column;
+            gap: 15px;
+            align-items: baseline;
+            margin: 20px auto;
+        }
+        .icon-wrapper {
+            margin-top: 230px;
+        }
+        .icon-wrapper p {
+            font-size: 18px;
+        }
+        .caution-text {
+            font-size: 12px;
+            padding: 0 40px;
+        }
+        .footer-text {
+            font-size: 12px;
+        }
+
+        /* menuページ */
+        .menu-page__fv {
+            padding: 30px 0;
+        }
+        .page-parts__header__menu-page img {
+            height: 250px;
+        }
+        .menu-link__btn {
+            gap: 40px;
+            align-items: baseline;
+            flex-direction: column;
+            margin: auto;
+            padding-left: 50px;
+        }
+        .menu-link__btn a {
+            font-size: 15px;
+        }
+
+        /* pancake */
+        .common-menu__desc {
+            padding: 5px 20px;
+        }
+        .common-menu-desc__wrapper {
+            flex-direction: column;
+        }
+        .common-menu-desc__list {
+            width: 100%;
+        }
+        .common-menu-desc__img img {
+            width: 80%;
+        }
+        .common-menu-desc__title {
+            font-size: 19px;
+            text-align: center;
+            padding: 0 20px;
+        }
+        .common-menu-desc__title__text {
+            font-size: 16px;
+            padding: 0 20px 0 30px;
+        }
+        .common-menu-name {
+            padding-left: 20px;
+            font-size: 18px;
+        }
+        .common-menu-price {
+            padding-right: 20px;
+            font-size: 16px;
+        }
+        .common-content-text {
+            font-size: 15px;
+            padding: 30px 0 20px 20px;
+        }
+
+        /* ぬい撮り */
+        .nuidori-content__desc__wrapper {
+            flex-direction: column;
+            margin: 10px auto;
+            gap: 10px;
+        }
+        .nuidori-content__desc__wrapper:nth-of-type(even) {
+            flex-direction: column-reverse;
+        }
+        .nuidori-content__text {
+            width: 100%;
+        }
+        .nuidori-content__img {
+            width: 100%;
+        }
+        .nuidori-content__img img {
+            height: 300px;
+        }
+        .nuidori-content__text__title {
+            font-size: 18px;
+        }
+        .nuidori-content__text p {
+            font-size: 18px;
+        }
+        .nuidori-content__attention__wrapper p {
+            text-align: left;
+            font-size: 18px;
+        }
+        .nuidori-content__attention__wrapper h4 {
+            font-size: 24px;
+        }
+        .nuidori-content__attention__list {
+            font-size: 18px;
+            padding-left: 20px;
+        }
+
+        /* お問い合わせページ */
+        .page-parts__header {
+            height: 200px;
+        }
+        .page-parts__header img {
+            height: 200px;
+        }
+        .page-parts__header-title h2 {
+            font-size: 21px;
+        }
+        .ContactForm7-contact__title {
+            font-size: 21px;
+        }
+        .ContactForm7-contact__text p {
+            font-size: 16px;
+        }
+        .ContactForm7-contact__label {
+            font-size: 18px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .wpcf7-form-control-wrap {
+            left: 10%;
+        }
+        .ContactForm7-contact textarea {
+            width: 70%;
+            height: 150px;
+            font-size: 16px;
+        }
+        .ContactForm7-contact input {
+            width: 70%;
+            font-size: 16px;
+        }
+        .ContactForm7-contact__submit {
+            font-size: 18px;
+            display: inline-block;
+            width: auto;
+            margin: 0 auto;
+            padding-left: 30%;
+            box-sizing: border-box;
+        }
+
+        /* お知らせ一覧 */
+        .post-archive-news {
+            margin: 30px auto;
+        }
+        .post-archive-news__wrap a {
+            flex-direction: column;
+            padding-top: 10px;
+        }
+        .post-archive-news__wrap h3 {
+            font-size: 16px;
+        }
+
+        /* singleページ */
+        .single-page-parts__fv img {
+            height: 150px;
+        }
+        .single-page-parts__desc {
+            margin: 30px auto 10px;
+        }
+        .single-page-parts__date {
+            font-size: 18px;
+            padding: 0 20px;
+        }
+        .single-page-parts__header-title {
+            text-align: center;
+        }
+        .single-page-parts__header-title h2 {
+            font-size: 20px;
+            margin: 0;
+            text-align: left;
+            padding: 20px 10px;
+        }
+        .single-page-parts__category {
+            padding: 0 20px;
+        }
+        .single-page-parts__category li {
+            font-size: 16px;
+        }
+        .single-page-parts__img {
+            padding: 0;
+        }
+        .single-page-parts__img img {
+            height: 300px;
+            padding: 30px 20px 10px;
+            box-sizing: border-box;
+        }
+        .single-page-parts__article p {
+            padding: 0 10px;
+            font-size: 18px;
+        }
+
+        /* 記事詳細ページ */
+        .wp-block-heading {
+            font-size: 18px;
+            padding: 0;
+        }
+
+        /* 404ページ */
+        .er-page-header {
+            width: 100%;
+            margin: 50px auto;
+        }
+        .er-page-header h2 {
+            text-align: left;
+            font-size: 18px;
+            padding: 0 20px;
+        }
+        .er-page-text-wrap p {
+            text-align: left;
+            font-size: 16px;
+            padding: 0 20px;
+            margin: 0 auto;
+        }
+
+        /* カテゴリ一覧 */
+        /* パンくずリスト */
+        .breadcrumb-list {
+            display: flex;
+            margin-top: 80px;
+            flex-wrap: wrap;
+            padding: 0 30px;
+        }
+        .breadcrumb li {
+            display: inline-block;/*横に並ぶように*/
+            list-style: none;
+            font-weight: bold;
+        }
+        .breadcrumb li:after {/* >を表示*/
+            content: '>';
+            padding: 0 10px;
+            color: #555;
+        }
+        .breadcrumb li:last-child:after {
+            content: '';
+        }
+        .breadcrumb li a {
+            text-decoration: none;
+            color: #6d3602;
+        }
+        .breadcrumb li a:hover {
+        text-decoration: underline;
+        }
+        /* パンくずリスト */
+
+        .category-page-parts__fv {
+            margin-top: 30px;
+        }
+        .category-page-parts__fv h2 {
+            font-size: 25px;
+        }
+        .category-page-parts__fv p {
+            font-size: 16px;
+            text-align: left;
+            padding: 0 40px;
+        }
+        .category-page-parts__category {
+            margin: 30px auto 10px;
+        }
+        .category-page-parts__desc__wrapper {
+            flex-direction: column;
+            margin: 30px auto;
+        }
+        .category-page-parts__img {
+            width: 100%;
+        }
+        .category-page-parts__img img {
+            height: 200px;
+        }
+        .category-page-parts__content-wrapper {
+            width: 100%;
+        }
+        .category-page-parts__title {
+            padding: 0;
+        }
+        .category-page-parts__title a {
+            font-size: 19px;
+        }
+        .post_body {
+            font-size: 16px;
+            margin-top: 20px;
+            padding: 0;
+        }
+    }
+}
