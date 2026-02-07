@@ -57,7 +57,7 @@
         <?php endif; ?>
         <!-- お知らせ一覧 -->
         <div class="front-common__btn">
-            <a href="お知らせ一覧">お知らせ一覧はこちら</a>
+            <a href="<?php echo esc_html(home_url('/お知らせ一覧/')); ?>">お知らせ一覧はこちら</a>
         </div>
     </section>
     <!-- お知らせ -->
@@ -68,7 +68,7 @@
             <h2 class="front-common__title__white">メニュー</h2>
             <div class="front-menu__wrapper">
                 <ul class="front-menu__list">
-                    <li class="front-menu__list__item">
+                    <li class="front-menu__list-item">
                         <img src="<?= get_template_directory_uri(); ?>/img/menu1.png" alt="パンケーキの画像">
                         <div class="front-menu__list__text">
                             <h3>パンケーキ各種</h3>
@@ -76,7 +76,7 @@
                                 丁寧に泡立てたメレンゲを使い、絶妙な火加減で焼き上げたパンケーキは、口に入れた瞬間にとろけるような「ふわしゅわ」食感。</p>
                         </div>
                     </li>
-                    <li class="front-menu__list__item">
+                    <li class="front-menu__list-item">
                         <img src="<?= get_template_directory_uri(); ?>/img/drink1.png" alt="紅茶の画像">
                         <div class="front-menu__list__text">
                             <h3>ドリンク各種</h3>
@@ -84,7 +84,7 @@
                                 「ぬい撮り」を楽しみながら、心安らぐ特別なカフェタイムをぜひお過ごしください。</p>
                         </div>
                     </li>
-                    <li class="front-menu__list__item">
+                    <li class="front-menu__list-item">
                         <img src="<?= get_template_directory_uri(); ?>/img/menu12.png" alt="アフタヌーンティーセットの画像">
                         <div class="front-menu__list__text">
                             <h3>アリスのティータイムセット</h3>
@@ -95,7 +95,7 @@
                 </ul>
             </div>
             <div class="front-common__btn__right">
-                <a href="メニュー">メニュー一覧はこちら</a>
+                <a href="<?php echo esc_html(home_url('/メニュー/')); ?>">メニュー一覧はこちら</a>
             </div>
         </div>
     </section>
@@ -243,7 +243,7 @@
     <!-- お問い合わせ -->
     <section class="contact-info">
         <div class="front-common__btn">
-            <a href="お問い合わせ">お問い合わせはこちら</a>
+            <a href="<?php echo esc_html(home_url('/お問い合わせ/')); ?>">お問い合わせはこちら</a>
         </div>
     </section>
     <!-- お問い合わせ -->
