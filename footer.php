@@ -30,7 +30,7 @@
                     <li><a href="<?= home_url(); ?>/#front-about">Aliceについて</a></li>
                     <li><a href="<?= home_url(); ?>/#store-info">店舗情報</a></li>
                     <li><a href="<?= home_url(); ?>/#calender">営業日カレンダー</a></li>
-                    <li><a href="お問い合わせ">お問い合わせ</a></li>
+                    <li><a href="<?php echo esc_html(home_url( '/お問い合わせ/' )); ?>">お問い合わせ</a></li>
                 </ul>
             </div>
             <div class="icon-wrapper">
@@ -46,64 +46,6 @@
     <p class="footer-text"><small>© Alice PANCAKE & CAFE 2025 All rights reserved.</small></p>
 </footer>
 <?php wp_footer(); ?>
-
-<!-- ハンバーガーメニュー -->
-<script src="<?= get_template_directory_uri(); ?>/hamburger.js"></script>
-
-<!-- swiper -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-<script>
-    // フロントビューswiper
-    const swiper = new Swiper('.swiper-fv', {
-        // Optional parameters
-        direction: 'horizontal',
-        loop: true,
-        speed: 1000,
-
-        // If we need pagination
-        pagination: {
-            el: '.swiper-fv .swiper-pagination',
-        },
-
-        // Navigation arrows
-        navigation: {
-            nextEl: '.swiper-fv .swiper-button-next',
-            prevEl: '.swiper-fv .swiper-button-prev',
-        },
-
-        // And if we need scrollbar
-        scrollbar: {
-            el: '.swiper-fv .swiper-scrollbar',
-            hide: true,
-        },
-    });
-    // フロントビューswiper
-
-    // 店舗情報swiper
-    const swiper_store = new Swiper('.swiper-store', {
-        // Optional parameters
-        direction: 'horizontal',
-        loop: true,
-        speed:1000,
-        
-        // If we need pagination
-        pagination: {
-            el: '.swiper-store .swiper-pagination',
-        },
-
-        // Navigation arrows
-        navigation: {
-            nextEl: '.swiper-store .swiper-button-next',
-            prevEl: '.swiper-store .swiper-button-prev',
-        },
-
-        // And if we need scrollbar
-        scrollbar: {
-            el: '.swiper-store .swiper-scrollbar',
-        },
-    });
-    // 店舗情報swiper
-</script>
 </body>
 
 </html>
