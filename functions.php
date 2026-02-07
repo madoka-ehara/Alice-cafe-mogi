@@ -16,6 +16,15 @@ function mytheme_enqueue_styles()
         array(),
         '1.0.0'
     );
+
+    // Swiper CSS
+    wp_enqueue_style(
+        'swiper',
+        'https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css',
+        array(),
+        null
+    );
+
     //style.cssの読み込み
     wp_enqueue_style(
         'my-style',
