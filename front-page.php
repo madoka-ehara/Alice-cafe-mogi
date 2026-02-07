@@ -94,7 +94,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="front-common__btn__right">
+            <div class="front-common__btn front-common__btn--primary">
                 <a href="<?php echo esc_html(home_url('/メニュー/')); ?>">メニュー一覧はこちら</a>
             </div>
         </div>
