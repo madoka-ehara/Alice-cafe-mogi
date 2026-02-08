@@ -481,7 +481,7 @@ a {
 .screen-reader-response {display: none;}
 
 /* menu-page */
-.page-parts__header__menu-page img {
+.page-parts__header-menu-page img {
     width: 100%;
     height: 500px;
     object-fit: cover;
@@ -522,7 +522,7 @@ a {
     background-color: #6d3602;
     padding: 80px 30px 50px;
 }
-.common-menu__desc__inner {
+.common-menu__desc-inner {
     max-width: 900px;
     background-color: #fff;
     margin: 20px auto;
@@ -533,7 +533,7 @@ a {
     font-weight: bold;
     padding: 0 50px;
 }
-.common-menu-desc__title__text {
+.common-menu-desc__title-text {
     font-size: 21px;
     padding: 0 50px 30px  50px;
     letter-spacing: 0.08em;
@@ -582,7 +582,7 @@ a {
     margin: 80px auto;
     padding: 0 20px;
 }
-.nuidori-content__desc__wrapper {
+.nuidori-content__desc-wrapper {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -593,7 +593,7 @@ a {
 .nuidori-content__text {
     width: 35%;
 }
-.nuidori-content__text__title {
+.nuidori-content__text-title {
     font-size: 26px;
     font-weight: bold;
 }
@@ -609,24 +609,24 @@ a {
     height: 400px;
     object-fit: cover;
 }
-.nuidori-content__info__text {
+.nuidori-content__info-text {
     text-align: center;
     font-size: 18px;
     padding-top: 50px;
 }
-.nuidori-content__attention__wrapper {
+.nuidori-content__attention-wrapper {
     max-width: 800px;
     margin: 30px auto;
 }
-.nuidori-content__attention__wrapper h4 {
+.nuidori-content__attention-wrapper h4 {
     font-size: 26px;
 }
-.nuidori-content__attention__wrapper p {
+.nuidori-content__attention-wrapper p {
     font-size: 21px;
     text-align: center;
     margin-top: 30px;
 }
-.nuidori-content__attention__list  {
+.nuidori-content__attention-list  {
     font-size: 21px;
     margin: 10px 0;
 }
@@ -1102,7 +1102,7 @@ a {
         padding-right: 30px;
     }
     /* ぬい撮り */
-    .nuidori-content__attention__wrapper {
+    .nuidori-content__attention-wrapper {
         padding: 20px;
     }
 
@@ -1407,7 +1407,7 @@ a {
             text-align: center;
             padding: 0 20px;
         }
-        .common-menu-desc__title__text {
+        .common-menu-desc__title-text {
             font-size: 16px;
             padding: 0 20px 0 30px;
         }
@@ -1425,12 +1425,12 @@ a {
         }
 
         /* ぬい撮り */
-        .nuidori-content__desc__wrapper {
+        .nuidori-content__desc-wrapper {
             flex-direction: column;
             margin: 10px auto;
             gap: 10px;
         }
-        .nuidori-content__desc__wrapper:nth-of-type(even) {
+        .nuidori-content__desc-wrapper:nth-of-type(even) {
             flex-direction: column-reverse;
         }
         .nuidori-content__text {
@@ -1442,20 +1442,20 @@ a {
         .nuidori-content__img img {
             height: 300px;
         }
-        .nuidori-content__text__title {
+        .nuidori-content__text-title {
             font-size: 18px;
         }
         .nuidori-content__text p {
             font-size: 18px;
         }
-        .nuidori-content__attention__wrapper p {
+        .nuidori-content__attention-wrapper p {
             text-align: left;
             font-size: 18px;
         }
-        .nuidori-content__attention__wrapper h4 {
+        .nuidori-content__attention-wrapper h4 {
             font-size: 24px;
         }
-        .nuidori-content__attention__list {
+        .nuidori-content__attention-list {
             font-size: 18px;
             padding-left: 20px;
         }
