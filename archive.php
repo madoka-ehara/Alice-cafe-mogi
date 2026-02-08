@@ -12,7 +12,7 @@
         </li>
         <li itemprop="itemListElement" itemscope
             itemtype="https://schema.org/ListItem">
-            <a itemprop="item" href="<?= home_url('お知らせ一覧'); ?>">
+            <a itemprop="item" href="<?php echo esc_html(home_url('/お知らせ一覧/')); ?>">
                 <span itemprop="name">お知らせ一覧</span>
             </a>
             <meta itemprop="position" content="2" />
