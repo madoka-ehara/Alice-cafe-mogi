@@ -798,7 +798,7 @@ a {
 .category-page-parts__category li a {
     color: #fff;
 }
-.category-page-parts__desc__wrapper {
+.category-page-parts__desc-wrapper {
     display: flex;
     max-width: 900px;
     margin: 50px auto;
@@ -1159,7 +1159,7 @@ a {
         max-width: 600px;
         margin-left: 0;
     }
-    .category-page-parts__desc__wrapper {
+    .category-page-parts__desc-wrapper {
         width: 100%;
         padding: 0 30px;
     }
@@ -1620,7 +1620,7 @@ a {
         .category-page-parts__category {
             margin: 30px auto 10px;
         }
-        .category-page-parts__desc__wrapper {
+        .category-page-parts__desc-wrapper {
             flex-direction: column;
             margin: 30px auto;
         }
