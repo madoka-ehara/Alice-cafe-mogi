@@ -65,7 +65,7 @@
     <!-- メニュー -->
     <section id="front-menu" class="front-menu">
         <div class="front-menu__inner">
-            <h2 class="front-common__title front-common__title--white">メニュー</h2>
+            <h2 class="front-common__title--white">メニュー</h2>
             <div class="front-menu__wrapper">
                 <ul class="front-menu__list">
                     <li class="front-menu__list-item">
@@ -142,7 +142,7 @@
     <!-- 店舗情報 -->
     <section id="store-info" class="store-info">
         <div class="store-info__inner">
-            <h2 class="front-common__title front-common__title--white">店舗情報</h2>
+            <h2 class="front-common__title--white">店舗情報</h2>
             <div class="store-img">
                 <img src="<?= get_template_directory_uri(); ?>/img/gaikan.png" alt="店舗外観画像">
             </div>
