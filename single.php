@@ -41,7 +41,7 @@ if (have_posts()) :
 endif;
 ?>
 <div class="front-common__btn">
-    <a href="お知らせ一覧">お知らせ一覧に戻る</a>
+    <a href="<?php echo esc_html(home_url('/お知らせ一覧/')); ?>">お知らせ一覧に戻る</a>
 </div>
 
 <?php get_footer(); ?>
