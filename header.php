@@ -26,7 +26,7 @@
             <li><a href="<?= home_url(); ?>/#front-about">Aliceについて</a></li>
             <li><a href="<?= home_url(); ?>/#store-info">店舗情報</a></li>
             <li><a href="<?= home_url(); ?>/#calender">営業日カレンダー</a></li>
-            <li><a href="お問い合わせ">お問い合わせ</a></li>
+            <li><a href="<?php echo esc_html(home_url( '/お問い合わせ/' )); ?>">お問い合わせ</a></li>
         </ul>
         <!-- ナビゲーションメニュー -->
         
@@ -45,7 +45,7 @@
             <li class="hamburger-menu-sp__item"><a class="sp-link" href="<?= home_url(); ?>/#front-about">Aliceについて</a></li>
             <li class="hamburger-menu-sp__item"><a class="sp-link" href="<?= home_url(); ?>/#store-info">店舗情報</a></li>
             <li class="hamburger-menu-sp__item"><a class="sp-link" href="<?= home_url(); ?>/#calender">営業日カレンダー</a></li>
-            <li class="hamburger-menu-sp__item"><a class="sp-link" href="お問い合わせ">お問い合わせ</a></li>
+            <li class="hamburger-menu-sp__item"><a class="sp-link" href="<?php echo esc_html(home_url( '/お問い合わせ/' )); ?>">お問い合わせ</a></li>
         </ul>
         <!-- ハンバーガーメニュー -->
     </header>

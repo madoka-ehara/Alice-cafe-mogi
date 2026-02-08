@@ -57,7 +57,7 @@
         <?php endif; ?>
         <!-- お知らせ一覧 -->
         <div class="front-common__btn">
-            <a href="お知らせ一覧">お知らせ一覧はこちら</a>
+            <a href="<?php echo esc_html(home_url('/お知らせ一覧/')); ?>">お知らせ一覧はこちら</a>
         </div>
     </section>
     <!-- お知らせ -->
@@ -65,28 +65,28 @@
     <!-- メニュー -->
     <section id="front-menu" class="front-menu">
         <div class="front-menu__inner">
-            <h2 class="front-common__title__white">メニュー</h2>
+            <h2 class="front-common__title--white">メニュー</h2>
             <div class="front-menu__wrapper">
                 <ul class="front-menu__list">
-                    <li class="front-menu__list__item">
+                    <li class="front-menu__list-item">
                         <img src="<?= get_template_directory_uri(); ?>/img/menu1.png" alt="パンケーキの画像">
-                        <div class="front-menu__list__text">
+                        <div class="front-menu__text">
                             <h3>パンケーキ各種</h3>
                             <p>奇跡のふわふわ！特製スフレパンケーキ<br>注文が入ってから焼き上げます。<br>
                                 丁寧に泡立てたメレンゲを使い、絶妙な火加減で焼き上げたパンケーキは、口に入れた瞬間にとろけるような「ふわしゅわ」食感。</p>
                         </div>
                     </li>
-                    <li class="front-menu__list__item">
+                    <li class="front-menu__list-item">
                         <img src="<?= get_template_directory_uri(); ?>/img/drink1.png" alt="紅茶の画像">
-                        <div class="front-menu__list__text">
+                        <div class="front-menu__text">
                             <h3>ドリンク各種</h3>
                             <p>うさぎのラテアートや彩り豊かなミックスジュースなど、思わず写真に収めたくなる一杯が揃っています。
                                 「ぬい撮り」を楽しみながら、心安らぐ特別なカフェタイムをぜひお過ごしください。</p>
                         </div>
                     </li>
-                    <li class="front-menu__list__item">
+                    <li class="front-menu__list-item">
                         <img src="<?= get_template_directory_uri(); ?>/img/menu12.png" alt="アフタヌーンティーセットの画像">
-                        <div class="front-menu__list__text">
+                        <div class="front-menu__text">
                             <h3>アリスのティータイムセット</h3>
                             <p>不思議の国のアリスの世界をイメージしたいろいろな種類を楽しめる贅沢セットです。<br>
                                 日頃のご褒美に、贅沢なひとときをお楽しみください。</p>
@@ -94,8 +94,8 @@
                     </li>
                 </ul>
             </div>
-            <div class="front-common__btn__right">
-                <a href="メニュー">メニュー一覧はこちら</a>
+            <div class="front-common__btn front-common__btn--primary">
+                <a href="<?php echo esc_html(home_url('/メニュー/')); ?>">メニュー一覧はこちら</a>
             </div>
         </div>
     </section>
@@ -105,7 +105,7 @@
     <section id="front-about" class="front-about">
         <div class="front-about__img">
             <h2 class="front-common__title">Aliceについて</h2>
-            <div class="front-about__text__wrapper">
+            <div class="front-about__text-wrapper">
                 <p>当店はぬい活応援カフェです</p>
                 <p>ぬいぐるみを愛するすべての方へ<br>
                     Aliceは、あなたの「ぬい活」を心から応援する<br>
@@ -118,19 +118,19 @@
             </div>
         </div>
         <ul class="front-about__list">
-            <li class="front-about__list__item">
+            <li class="front-about__list-item">
                 <h3>撮影スペース</h3>
                 <img src="<?= get_template_directory_uri(); ?>/img/nuidori2.png" alt="ぬい撮り撮影スペースの画像">
                 <p>可愛らしいミニチュア家具や小物を揃えた、撮影スペースをご用意。
                     あなたの「推し」が主役の素敵な一枚を撮影できます。</p>
             </li>
-            <li class="front-about__list__item">
+            <li class="front-about__list-item">
                 <h3>特別メニュー</h3>
                 <img src="<?= get_template_directory_uri(); ?>/img/nuidori3.png" alt="アフタヌーンティーセットとぬい撮りの画像">
                 <p>写真映え抜群の特製パンケーキや、お一人様でも楽しめるアフタヌーンティーセットなど、多数ご用意。
                     あなたの「推し」とのティータイムを彩ります。</p>
             </li>
-            <li class="front-about__list__item">
+            <li class="front-about__list-item">
                 <h3>ワークショップ</h3>
                 <img src="<?= get_template_directory_uri(); ?>/img/workshop.png" alt="アフタヌーンティーセットの画像">
                 <p>ぬいぐるみの衣装作りワーショップや、交流会も不定期で開催しています。</p>
@@ -142,7 +142,7 @@
     <!-- 店舗情報 -->
     <section id="store-info" class="store-info">
         <div class="store-info__inner">
-            <h2 class="front-common__title__white">店舗情報</h2>
+            <h2 class="front-common__title--white">店舗情報</h2>
             <div class="store-img">
                 <img src="<?= get_template_directory_uri(); ?>/img/gaikan.png" alt="店舗外観画像">
             </div>
@@ -243,7 +243,7 @@
     <!-- お問い合わせ -->
     <section class="contact-info">
         <div class="front-common__btn">
-            <a href="お問い合わせ">お問い合わせはこちら</a>
+            <a href="<?php echo esc_html(home_url('/お問い合わせ/')); ?>">お問い合わせはこちら</a>
         </div>
     </section>
     <!-- お問い合わせ -->
