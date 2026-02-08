@@ -35,7 +35,7 @@ if (have_posts()) :
     while (have_posts()) :
         the_post();
 ?>
-        <div class="category-page-parts__desc__wrapper">
+        <div class="category-page-parts__desc-wrapper">
             <!-- 画像 -->
             <div class="category-page-parts__img">
                 <?php the_post_thumbnail('full'); ?>
