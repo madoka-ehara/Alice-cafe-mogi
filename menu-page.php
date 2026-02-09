@@ -13,7 +13,7 @@ if (have_posts()) :
         the_post();
 ?>
         <!-- 記事ヘッダー -->
-        <div class="page-parts__header__menu-page">
+        <div class="page-parts__header-menu-page">
             <!-- 画像 -->
             <?php the_post_thumbnail('full'); ?>
         </div>
@@ -50,9 +50,9 @@ endif;
 
 <!-- パンケーキ -->
 <section id="pancake-menu" class="common-menu__desc">
-    <div class="common-menu__desc__inner">
+    <div class="common-menu__desc-inner">
         <h3 class="common-menu-desc__title">パンケーキ</h3>
-        <p class="common-menu-desc__title__text">当店の主役！<br>注文を受けてから丁寧に焼き上げる、とろけるようなスフレパンケーキです。</p>
+        <p class="common-menu-desc__title-text">当店の主役！<br>注文を受けてから丁寧に焼き上げる、とろけるようなスフレパンケーキです。</p>
         <ul class="common-menu-desc__wrapper">
             <li class="common-menu-desc__list">
                 <div class="common-menu-desc__img">
@@ -106,9 +106,9 @@ endif;
 
 <!-- 軽食メニュー -->
 <section id="light-meal-menu" class="common-menu__desc">
-    <div class="common-menu__desc__inner">
+    <div class="common-menu__desc-inner">
         <h3 class="common-menu-desc__title">軽食</h3>
-        <p class="common-menu-desc__title__text">愛らしいサンドイッチとカントリー風エッグベネディクト</p>
+        <p class="common-menu-desc__title-text">愛らしいサンドイッチとカントリー風エッグベネディクト</p>
         <ul class="common-menu-desc__wrapper">
             <li class="common-menu-desc__list">
                 <div class="common-menu-desc__img">
@@ -171,9 +171,9 @@ endif;
 
 <!-- アリスのティータイム・アフタヌーンティーセット -->
 <section id="afternoon-menu" class="common-menu__desc">
-    <div class="common-menu__desc__inner">
+    <div class="common-menu__desc-inner">
         <h3 class="common-menu-desc__title">アリスのティータイム・アフタヌーンティーセット</h3>
-        <p class="common-menu-desc__title__text">アリスの物語から飛び出してきたような、贅沢なアフタヌーンティーセットです。</p>
+        <p class="common-menu-desc__title-text">アリスの物語から飛び出してきたような、贅沢なアフタヌーンティーセットです。</p>
         <ul class="common-menu-desc__wrapper">
             <li class="common-menu-desc__list">
                 <div class="common-menu-desc__img">
@@ -208,9 +208,9 @@ endif;
 
 <!-- ドリンク -->
 <section id="drink-menu" class="common-menu__desc">
-    <div class="common-menu__desc__inner">
+    <div class="common-menu__desc-inner">
         <h3 class="common-menu-desc__title">ドリンク</h3>
-        <p class="common-menu-desc__title__text">お食事と一緒にどうぞ！ドリンクセットでお得なティータイムを。</p>
+        <p class="common-menu-desc__title-text">お食事と一緒にどうぞ！ドリンクセットでお得なティータイムを。</p>
         <ul class="common-menu-desc__wrapper">
             <li class="common-menu-desc__list">
                 <div class="common-menu-desc__img">
@@ -304,9 +304,9 @@ endif;
 <!-- ぬい撮り -->
 <section id="nuidori-content" class="nuidori-content__desc">
     <h2 class="front-common__title">ぬい撮り</h2>
-    <div class="nuidori-content__desc__wrapper">
+    <div class="nuidori-content__desc-wrapper">
         <div class="nuidori-content__text">
-            <h4 class="nuidori-content__text__title">貸出コスチューム</h4>
+            <h4 class="nuidori-content__text-title">貸出コスチューム</h4>
             <p>手のひらサイズのぬいぐるみ用コスチュームをご用意しております。
                 <br>ご自由にご利用ください。
             </p>
@@ -315,27 +315,27 @@ endif;
             <img src="<?= get_template_directory_uri(); ?>/img/costume.png" alt="コスチュームを身につけたぬいぐるみの画像">
         </div>
     </div>
-    <div class="nuidori-content__desc__wrapper">
+    <div class="nuidori-content__desc-wrapper">
         <div class="nuidori-content__img">
             <img src="<?= get_template_directory_uri(); ?>/img/nuidori2.png" alt="コスチュームを身につけたぬいぐるみの画像">
         </div>
         <div class="nuidori-content__text">
-            <h4 class="nuidori-content__text__title">撮影用小物貸出</h4>
+            <h4 class="nuidori-content__text-title">撮影用小物貸出</h4>
             <p>撮影用のミニチュア食器、小物などもご用意しております。</p>
         </div>
     </div>
-    <div class="nuidori-content__desc__wrapper">
+    <div class="nuidori-content__desc-wrapper">
         <div class="nuidori-content__text">
-            <h4 class="nuidori-content__text__title">ぬいぐるみさん専用お席</h4>
+            <h4 class="nuidori-content__text-title">ぬいぐるみさん専用お席</h4>
             <p>お連れのぬいぐるみさん専用のお席をご用意いたします。</p>
         </div>
         <div class="nuidori-content__img">
             <img src="<?= get_template_directory_uri(); ?>/img/doll3.png" alt="クリスマス衣装のうさぎのぬいぐるみの画像">
         </div>
     </div>
-    <div class="nuidori-content__attention__wrapper">
+    <div class="nuidori-content__attention-wrapper">
         <h4>撮影時の注意点</h4>
-        <ul class="nuidori-content__attention__list">
+        <ul class="nuidori-content__attention-list">
             <li>店内は撮影自由です。</li>
             <li>撮影機材をご使用の際は、周囲のお客様へのご配慮をお願いいたします。</li>
             <li>周囲のお客様や従業員が映り込まないよう、十分にご配慮ください。</li>
@@ -348,7 +348,7 @@ endif;
 <!-- お問い合わせ -->
 <section class="contact-info">
     <div class="front-common__btn">
-        <a href="お問い合わせ">お問い合わせはこちら</a>
+        <a href="<?php echo esc_html(home_url('/お問い合わせ/')); ?>">お問い合わせはこちら</a>
     </div>
 </section>
 <!-- お問い合わせ -->
