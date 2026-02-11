@@ -168,6 +168,7 @@ a {
 }
 .front-menu__list {
     margin: 50px auto;
+    padding: 0 20px;
     list-style: none;
 }
 .front-menu__list-item {
@@ -179,7 +180,7 @@ a {
 }
 .front-menu__list-item img {
     width: 300px;
-    height: 300px;
+    height: auto;
     object-fit: cover;
 }
 .front-menu__text {
@@ -306,6 +307,9 @@ a {
     max-width: 900px;
     margin: 100px auto;
     gap: 80px;
+}
+.front-calender iframe {
+    width: 100%;
 }
 .store-mng__info {
     text-align: center;
@@ -1021,7 +1025,6 @@ a {
     .store-info__desc {
         flex-direction: column;
         width: 100%;
-        padding: 0 150px;
         box-sizing: border-box;
     }
     .store-img {
@@ -1029,6 +1032,8 @@ a {
         width: 100%;
     }
     .front_store-list {
+        width: max-content;
+        margin: auto;
         font-size: 22px;
     }
     .store-map {
@@ -1040,7 +1045,10 @@ a {
         flex-direction: column;
         margin: 50px auto;
         gap: 80px;
-        padding: 20px 120px;
+        padding: 20px 10%;
+    }
+    .front-calender iframe {
+        width: 100%;
     }
     .store-mng__name {
         margin-bottom: 30px;
@@ -1159,11 +1167,16 @@ a {
         margin-left: 0;
     }
     .category-page-parts__desc-wrapper {
+        flex-direction: column;
         width: 100%;
         padding: 0 30px;
     }
-    .category-page-parts__img img {
-        height: 280px;    
+    .category-page-parts__img {
+        width: 100%;
+    }
+    .category-page-parts__content-wrapper {
+        width: 100%;
+        margin-top: 30px;
     }
     .category-page-parts__title {
         padding-left: 30px;
@@ -1174,7 +1187,7 @@ a {
     .post_body {
         font-size: 16px;
         margin-top: 50px;
-        padding-left: 30px;
+        padding: 0 30px;
         letter-spacing: 0.1em;
     }
 
@@ -1331,10 +1344,7 @@ a {
         .front-calender {
             max-width: 400px;
         }
-        .front-calender iframe {
-            width: 100%;
-        }
-
+        
         /* footer */
         .footer-inner {
             padding: 30px 20px;
@@ -1618,18 +1628,11 @@ a {
         .category-page-parts__category {
             margin: 30px auto 10px;
         }
-        .category-page-parts__desc-wrapper {
-            flex-direction: column;
-            margin: 30px auto;
-        }
-        .category-page-parts__img {
-            width: 100%;
-        }
         .category-page-parts__img img {
             height: 200px;
         }
         .category-page-parts__content-wrapper {
-            width: 100%;
+            margin: auto;
         }
         .category-page-parts__title {
             padding: 0;
