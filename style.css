@@ -98,6 +98,7 @@ a {
 .front-common__btn a {
     display: block;
     text-align: center;
+    margin: 50px auto;
     padding: 15px;
     border: solid 0.5px #000;
     border-radius: 50px;
@@ -1020,7 +1021,7 @@ a {
 
     /* 店舗情報 */
     .store-info__inner {
-        padding: 50px 20px;
+        padding: 50px 20px 100px 20px;
     }
     .store-info__desc {
         flex-direction: column;
